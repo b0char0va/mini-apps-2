@@ -1,0 +1,36 @@
+{
+  "name": "hrsf104-mini-apps-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "dev": "webpack -d --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/b0char0va/hrsf104-mini-apps-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/b0char0va/hrsf104-mini-apps-2/issues"
+  },
+  "homepage": "https://github.com/b0char0va/hrsf104-mini-apps-2#readme",
+  "dependencies": {
+    "chart.js": "^2.7.3",
+    "express": "^4.16.4",
+    "jquery": "^3.3.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "webpack": "^4.27.0",
+    "webpack-cli": "^3.1.2"
+  }
+}
