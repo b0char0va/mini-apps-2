@@ -32,6 +32,7 @@ class App extends React.Component {
         })
             .then(res => res.json())
             .then(data => {
+                console.log(data);
                 const resultsPerPage = [];
                 for(let i = this.state.offset; i <= this.state.offset+9; i++){
                     if(!data[i]) {
@@ -40,6 +41,7 @@ class App extends React.Component {
                     }
                     resultsPerPage.push(data[i]);
                 }
+                console.log(resultsPerPage);
                 this.setState({
                     data: data,
                     pageCount: Math.ceil(data.length / 10),
@@ -79,7 +81,7 @@ class App extends React.Component {
                 {
                     !this.state.showResults ? null :
                         <div>
-                            <SearchResults results = {this.state.onePageResults}/>
+                            <SearchResults results = {this.state.onePageResults} />
                             <ReactPaginate previousLabel={"previous"}
                                             nextLabel={"next"}
                                             breakLabel={"..."}

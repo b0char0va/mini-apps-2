@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/b0char0va/hrsf104-mini-apps-2#readme",
   "dependencies": {
+    "express": "^4.16.4",
     "jquery": "^3.3.1",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
